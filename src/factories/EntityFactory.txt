@@ -1,0 +1,8 @@
+local EntityFactory = {}
+EntityFactory.__index = EntityFactory
+
+function EntityFactory.new()
+    return setmetatable({}, EntityFactory)
+end
+
+return EntityFactory
